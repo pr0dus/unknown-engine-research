@@ -1,0 +1,193 @@
+{
+  "arm": "method",
+  "budget_total": 4,
+  "comparison_tolerance": 1e-12,
+  "family": "finite-cubic-affine-sensor/1",
+  "limitations": [
+    "Single practice run in a public, finite, noiseless family with exact calibration. It is not a frontier benchmark or evidence of real-world forecasting ability.",
+    "These twelve targets share one world and are not twelve independent trials. No population confidence interval or general ability conclusion follows from this run.",
+    "Replay reconstruction checks internal consistency. Hashes are not signatures and cannot detect an entirely substituted record without an independently retained commitment or checkpoint.",
+    "The report does not verify participant identity, model identity, isolation, unseen data, or whether the participant accessed disclosed answers elsewhere.",
+    "A strong deterministic reference is computed after completion using the same information and experiment budget; it may use different computation and different experiments. One-run wins are possible without general superiority.",
+    "No global ranking, intelligence certification, performance tier, or sponsor privilege is awarded. Payments do not affect scores or comparison rules."
+  ],
+  "metrics": {
+    "brier_loss": 0.0,
+    "brier_skill_explanation": "1 - Brier loss / 0.25. This is relative forecast loss, NOT accuracy: 1 means zero loss, 0 ties constant 0.5, and negative values are worse than that neutral reference.",
+    "brier_skill_score": 1.0,
+    "cost_unit": "Declared experiment units; excludes computation, model tokens, money, and development effort.",
+    "neutral_brier_loss": 0.25,
+    "source_cost_provenance": "Six-experiment referee-generated donor fixture when donor information is supplied; zero in the none arm. Not measured participant discovery effort.",
+    "source_experiments": 6,
+    "target_experiments": 4,
+    "total_experiments": 10,
+    "versus_neutral": "better"
+  },
+  "participant": {
+    "identity_verified": false,
+    "label": "Ordinary adaptive reference \u2014 disclosed development example",
+    "label_provenance": "Optional self-reported label; no provider, model, person, or organization identity was verified."
+  },
+  "protocol": "unknown-engine/transfer-0.5-alpha.1",
+  "provenance": {
+    "installed_package_version": null,
+    "reference_function": "unknown_engine.transfer_matched.matched_forecast",
+    "reference_implementation": "Exact weighted finite-family Bayesian posterior with greedy observation-entropy selection and deterministic action ordering.",
+    "source_sha256": {
+      "transfer.py": "0deab2756e88d1c3441f6c7643c07522c320d21fdec28a67af26e68eb2f177ae",
+      "transfer_matched.py": "bf1313530e40460ff443781146d5b2961e09a6abb57ad72f279e0fef2dd8dcd0",
+      "transfer_report.py": "9497bfda5b1f9d964aaabbc95bff5a9a1cf413381fea199e0f063868c0dc3477"
+    }
+  },
+  "reference": {
+    "arm": "method",
+    "brier_loss": 0.0,
+    "budget_total": 4,
+    "comparison_scope": "Post-completion deterministic reference on the identical physical world, with the same initial public information, information arm, and target experiment budget. Computation is not equalized or measured; the policy is not asserted to be optimal.",
+    "completed_disclosed_replay_verified": true,
+    "experiment_actions": [
+      {
+        "kind": "probe",
+        "x": 0.5
+      },
+      {
+        "kind": "probe",
+        "x": -2.0
+      }
+    ],
+    "name": "matched_finite_bayes",
+    "participant_minus_reference_brier": 0.0,
+    "participant_vs_reference": "tied",
+    "physical_pairing_verified": true,
+    "physical_world_sha256": "cc4e21333e2a88ee5ca3a418eda0f75958cffc2b28cbc700a789bae63d90af5c",
+    "posterior_expected_brier": 0.0,
+    "probabilities": {
+      "q@-0.5>=-2": 1.0,
+      "q@-0.5>=0": 1.0,
+      "q@-0.5>=2": 1.0,
+      "q@-1.5>=-2": 1.0,
+      "q@-1.5>=0": 1.0,
+      "q@-1.5>=2": 1.0,
+      "q@0.5>=-2": 1.0,
+      "q@0.5>=0": 1.0,
+      "q@0.5>=2": 0.0,
+      "q@1.5>=-2": 1.0,
+      "q@1.5>=0": 0.0,
+      "q@1.5>=2": 0.0
+    },
+    "source_experiments": 6,
+    "stopping_reason": "zero_forecast_uncertainty",
+    "target_experiments": 2,
+    "total_experiments": 8
+  },
+  "replay_sha256": "c805f5ec4856982aec1dff9e00fc11017b3d9a295cd0c2a607cb4a8a46b099b2",
+  "run_id": "ue-c805f5ec4856982aec1dff9e00fc11017b3d9a295cd0c2a607cb4a8a46b099b2",
+  "schema": "unknown-engine-transfer-run-report/0.1",
+  "targets": [
+    {
+      "brier_loss": 0.0,
+      "key": "q@-1.5>=-2",
+      "outcome": 1,
+      "probability": 1.0,
+      "threshold": -2,
+      "x": -1.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@-1.5>=0",
+      "outcome": 1,
+      "probability": 1.0,
+      "threshold": 0,
+      "x": -1.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@-1.5>=2",
+      "outcome": 1,
+      "probability": 1.0,
+      "threshold": 2,
+      "x": -1.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@-0.5>=-2",
+      "outcome": 1,
+      "probability": 1.0,
+      "threshold": -2,
+      "x": -0.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@-0.5>=0",
+      "outcome": 1,
+      "probability": 1.0,
+      "threshold": 0,
+      "x": -0.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@-0.5>=2",
+      "outcome": 1,
+      "probability": 1.0,
+      "threshold": 2,
+      "x": -0.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@0.5>=-2",
+      "outcome": 1,
+      "probability": 1.0,
+      "threshold": -2,
+      "x": 0.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@0.5>=0",
+      "outcome": 1,
+      "probability": 1.0,
+      "threshold": 0,
+      "x": 0.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@0.5>=2",
+      "outcome": 0,
+      "probability": 0.0,
+      "threshold": 2,
+      "x": 0.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@1.5>=-2",
+      "outcome": 1,
+      "probability": 1.0,
+      "threshold": -2,
+      "x": 1.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@1.5>=0",
+      "outcome": 0,
+      "probability": 0.0,
+      "threshold": 0,
+      "x": 1.5
+    },
+    {
+      "brier_loss": 0.0,
+      "key": "q@1.5>=2",
+      "outcome": 0,
+      "probability": 0.0,
+      "threshold": 2,
+      "x": 1.5
+    }
+  ],
+  "verification": {
+    "canonical_replay_encoding": "UTF-8 JSON; sorted keys; separators comma and colon; ensure_ascii=true; no NaN/Infinity. SHA-256 identifies these canonical replay bytes, not pretty-printed file bytes.",
+    "chain_head": "1b20d6f873f7ba3ad449da64505dbf4ee6fe998aa7c461a0dbe05c2c91b6a6d9",
+    "commitment": "b047a410245560a2f6bca3ac2ac9b4e416294bea1a4fca08d4510e30325359a8",
+    "completed_disclosed_replay_verified": true,
+    "receipt_entries": 7,
+    "scope": "Full deterministic reconstruction including observations, scores, costs, and public state; not server authenticity or proof of participant isolation.",
+    "simulation_verified": true
+  }
+}

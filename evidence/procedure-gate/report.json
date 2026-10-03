@@ -1,0 +1,425 @@
+{
+  "archive_sha256": "68862344980c6d56a22b503a4a9aabe50d395169928e1aa2fb7daac48c4640c4",
+  "disposition": "Regression diagnostic passed; frontier-difficulty claim rejected; redesign required before a frontier trial.",
+  "expected_shortcut_observed": true,
+  "fixture_count": 194,
+  "freeze_sha256": "1b6263e592b9ecbe74a20bfde5fd0f085c9cec6e5021b722e7c4c5b603e3092b",
+  "frozen_files": {
+    "docs/PROCEDURE_VALIDITY_PROTOCOL.md": "9e0c4f29b1ef9f0ad0ac9862129f5de7715208a3431381678658cf5c3fefe8e1",
+    "scripts/verify_procedure_gate.py": "a005a30468b290d27cc33d17e624df576548fb1a8118041deafc623c54019603",
+    "src/unknown_engine/procedure.py": "f69eebdd244d67084b503b5440580480e1f2bc6775f9d89cf78f463620b15b82",
+    "src/unknown_engine/procedure_reference.py": "f6431202220c7bd91a4344668cfa2855de725f6b21fcedf11dad895e8caffc36",
+    "tests/test_procedure.py": "d3ad37b0d2796956d3d23beae79b228e49fdd01b0e2c3eec0c8c93627698f3c7",
+    "tests/test_procedure_reference.py": "0fca9f3e482259314551f4a56bfc25aef61c0f031d9c299cd024ec9173ce231f",
+    "tests/test_procedure_verifier.py": "af8907adb877b9c5a13afd715e660676b3f962871f05ef199148cfe96eb9af25"
+  },
+  "independent_verification": "Not established by this runner; use the separately implemented verifier on this complete archive.",
+  "legacy_guard_failure_observed": true,
+  "limitations": [
+    "All 192 full configurations and both restricted fixtures are disclosed development cases, not sampled independent trials.",
+    "Policies are deterministic programs, not language models. Twenty-four outputs within a world are not independent trials.",
+    "No population confidence interval, posterior-calibration, external validity, independent discovery or real-use claim is made.",
+    "The source fixture costs 16 units per run; this comparison does not test whether source transfer saved resources.",
+    "Warranted-decision correctness uses full-access truth or restricted-access undetermined as the frozen criterion, not an assessment of actual agent reasoning.",
+    "Uninformed restricted-access guesses receive no warranted-decision credit even when they match the hidden validity.",
+    "Costs count resets, command ticks and samples; computation, inference tokens, money and physical time are not measured.",
+    "Local hashes are neither an external timestamp nor evidence of participant isolation or referee honesty."
+  ],
+  "policies": [
+    "blind_source",
+    "always_reject",
+    "legacy_check",
+    "validate_then_repair",
+    "fixed_sysid"
+  ],
+  "profiles": {
+    "full": {
+      "always_reject": {
+        "decision_counts": {
+          "invalid": 192,
+          "undetermined": 0,
+          "valid": 0
+        },
+        "hidden_validity_agreement_count": 180,
+        "hidden_validity_agreements_without_warrant_count": 0,
+        "invalid_model_acceptance_count": 0,
+        "maximum_absolute_error": 3.125,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.3685646135515223,
+        "mean_target_costs": {
+          "experiment_calls": 0.0,
+          "resets": 0.0,
+          "samples": 0.0,
+          "ticks": 0.0,
+          "units": 0.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "runs": 192,
+        "undetermined_count": 0,
+        "valid_model_rejection_count": 12,
+        "warranted_decision_correct_count": 180,
+        "warranted_decision_correct_fraction": 0.9375
+      },
+      "blind_source": {
+        "decision_counts": {
+          "invalid": 0,
+          "undetermined": 0,
+          "valid": 192
+        },
+        "hidden_validity_agreement_count": 12,
+        "hidden_validity_agreements_without_warrant_count": 0,
+        "invalid_model_acceptance_count": 180,
+        "maximum_absolute_error": 3.125,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.3685646135515223,
+        "mean_target_costs": {
+          "experiment_calls": 0.0,
+          "resets": 0.0,
+          "samples": 0.0,
+          "ticks": 0.0,
+          "units": 0.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "runs": 192,
+        "undetermined_count": 0,
+        "valid_model_rejection_count": 0,
+        "warranted_decision_correct_count": 12,
+        "warranted_decision_correct_fraction": 0.0625
+      },
+      "fixed_sysid": {
+        "decision_counts": {
+          "invalid": 180,
+          "undetermined": 0,
+          "valid": 12
+        },
+        "hidden_validity_agreement_count": 192,
+        "hidden_validity_agreements_without_warrant_count": 0,
+        "invalid_model_acceptance_count": 0,
+        "maximum_absolute_error": 0.0,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.0,
+        "mean_target_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 8.0,
+          "resets": 4.0,
+          "samples": 16.0,
+          "ticks": 12.0,
+          "units": 32.0
+        },
+        "runs": 192,
+        "undetermined_count": 0,
+        "valid_model_rejection_count": 0,
+        "warranted_decision_correct_count": 192,
+        "warranted_decision_correct_fraction": 1.0
+      },
+      "legacy_check": {
+        "decision_counts": {
+          "invalid": 96,
+          "undetermined": 0,
+          "valid": 96
+        },
+        "hidden_validity_agreement_count": 108,
+        "hidden_validity_agreements_without_warrant_count": 0,
+        "invalid_model_acceptance_count": 84,
+        "maximum_absolute_error": 3.25,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.35686636754932505,
+        "mean_target_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 4.0,
+          "ticks": 34.0,
+          "units": 40.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 8.0,
+          "resets": 4.0,
+          "samples": 12.0,
+          "ticks": 40.0,
+          "units": 56.0
+        },
+        "runs": 192,
+        "undetermined_count": 0,
+        "valid_model_rejection_count": 0,
+        "warranted_decision_correct_count": 108,
+        "warranted_decision_correct_fraction": 0.5625
+      },
+      "validate_then_repair": {
+        "decision_counts": {
+          "invalid": 180,
+          "undetermined": 0,
+          "valid": 12
+        },
+        "hidden_validity_agreement_count": 192,
+        "hidden_validity_agreements_without_warrant_count": 0,
+        "invalid_model_acceptance_count": 0,
+        "maximum_absolute_error": 0.0,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.0,
+        "mean_target_costs": {
+          "experiment_calls": 6.0,
+          "resets": 4.0,
+          "samples": 10.0,
+          "ticks": 40.0,
+          "units": 54.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 10.0,
+          "resets": 6.0,
+          "samples": 18.0,
+          "ticks": 46.0,
+          "units": 70.0
+        },
+        "runs": 192,
+        "undetermined_count": 0,
+        "valid_model_rejection_count": 0,
+        "warranted_decision_correct_count": 192,
+        "warranted_decision_correct_fraction": 1.0
+      }
+    },
+    "restricted": {
+      "always_reject": {
+        "decision_counts": {
+          "invalid": 2,
+          "undetermined": 0,
+          "valid": 0
+        },
+        "hidden_validity_agreement_count": 1,
+        "hidden_validity_agreements_without_warrant_count": 1,
+        "invalid_model_acceptance_count": 0,
+        "maximum_absolute_error": 0.75,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.07314046223958333,
+        "mean_target_costs": {
+          "experiment_calls": 0.0,
+          "resets": 0.0,
+          "samples": 0.0,
+          "ticks": 0.0,
+          "units": 0.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "runs": 2,
+        "undetermined_count": 0,
+        "valid_model_rejection_count": 1,
+        "warranted_decision_correct_count": 0,
+        "warranted_decision_correct_fraction": 0.0
+      },
+      "blind_source": {
+        "decision_counts": {
+          "invalid": 0,
+          "undetermined": 0,
+          "valid": 2
+        },
+        "hidden_validity_agreement_count": 1,
+        "hidden_validity_agreements_without_warrant_count": 1,
+        "invalid_model_acceptance_count": 1,
+        "maximum_absolute_error": 0.75,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.07314046223958333,
+        "mean_target_costs": {
+          "experiment_calls": 0.0,
+          "resets": 0.0,
+          "samples": 0.0,
+          "ticks": 0.0,
+          "units": 0.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "runs": 2,
+        "undetermined_count": 0,
+        "valid_model_rejection_count": 0,
+        "warranted_decision_correct_count": 0,
+        "warranted_decision_correct_fraction": 0.0
+      },
+      "fixed_sysid": {
+        "decision_counts": {
+          "invalid": 0,
+          "undetermined": 2,
+          "valid": 0
+        },
+        "hidden_validity_agreement_count": 0,
+        "hidden_validity_agreements_without_warrant_count": 0,
+        "invalid_model_acceptance_count": 0,
+        "maximum_absolute_error": 0.375,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.036570231119791664,
+        "mean_target_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 4.0,
+          "ticks": 2.0,
+          "units": 8.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 8.0,
+          "resets": 4.0,
+          "samples": 12.0,
+          "ticks": 8.0,
+          "units": 24.0
+        },
+        "runs": 2,
+        "undetermined_count": 2,
+        "valid_model_rejection_count": 0,
+        "warranted_decision_correct_count": 2,
+        "warranted_decision_correct_fraction": 1.0
+      },
+      "legacy_check": {
+        "decision_counts": {
+          "invalid": 0,
+          "undetermined": 2,
+          "valid": 0
+        },
+        "hidden_validity_agreement_count": 0,
+        "hidden_validity_agreements_without_warrant_count": 0,
+        "invalid_model_acceptance_count": 0,
+        "maximum_absolute_error": 0.75,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.07314046223958333,
+        "mean_target_costs": {
+          "experiment_calls": 0.0,
+          "resets": 0.0,
+          "samples": 0.0,
+          "ticks": 0.0,
+          "units": 0.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "runs": 2,
+        "undetermined_count": 2,
+        "valid_model_rejection_count": 0,
+        "warranted_decision_correct_count": 2,
+        "warranted_decision_correct_fraction": 1.0
+      },
+      "validate_then_repair": {
+        "decision_counts": {
+          "invalid": 0,
+          "undetermined": 2,
+          "valid": 0
+        },
+        "hidden_validity_agreement_count": 0,
+        "hidden_validity_agreements_without_warrant_count": 0,
+        "invalid_model_acceptance_count": 0,
+        "maximum_absolute_error": 0.375,
+        "mean_source_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 8.0,
+          "ticks": 6.0,
+          "units": 16.0
+        },
+        "mean_squared_physical_prediction_error": 0.036570231119791664,
+        "mean_target_costs": {
+          "experiment_calls": 4.0,
+          "resets": 2.0,
+          "samples": 4.0,
+          "ticks": 2.0,
+          "units": 8.0
+        },
+        "mean_total_costs": {
+          "experiment_calls": 8.0,
+          "resets": 4.0,
+          "samples": 12.0,
+          "ticks": 8.0,
+          "units": 24.0
+        },
+        "runs": 2,
+        "undetermined_count": 2,
+        "valid_model_rejection_count": 0,
+        "warranted_decision_correct_count": 2,
+        "warranted_decision_correct_fraction": 1.0
+      }
+    }
+  },
+  "record_count": 970,
+  "restricted_identification_warranted_abstention_observed": true,
+  "schema": "unknown-engine-procedure-study/0.1",
+  "warranted_decision_criterion": "Access-profile criterion: full-access decisions agree with hidden operational validity; restricted-access decisions must be undetermined. This does not certify actual policy reasoning or validate whether its particular history warranted its answer."
+}

@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "worlds": 32,
+  "records": 480,
+  "receipt_entries": 2082,
+  "independent_full_generative_prior_enumeration": true,
+  "independent_raw_lagrange_reconstruction": true,
+  "independent_greedy_actions_stopping_and_posteriors": true,
+  "independent_losses_costs_curves_and_projections": true,
+  "raw_method_behavior_equal": true,
+  "budget_action_prefixes_match": true,
+  "archived_fixtures_and_specification_hashes_verified": true,
+  "scope": "Exploratory reused development fixtures only; arithmetic amortization is not an observed recipient-cohort result."
+}

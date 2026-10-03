@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "worlds": 32,
+  "records": 224,
+  "receipt_entries": 1347,
+  "simulation_verified": true,
+  "independent_outcomes_losses_costs_and_aggregates": true,
+  "physical_pairing_verified": true,
+  "scope": "Development reference evidence only. Verification checks mathematical consistency, not independent model participation, held-out evaluation, novelty, or external transfer."
+}

@@ -1,0 +1,1411 @@
+{
+  "amortization_projection": {
+    "break_even": {
+      "exact_cost_equality_recipient_count": null,
+      "recipients_at_least_as_cheap": 4,
+      "recipients_for_strict_cost_saving": 4
+    },
+    "comparison": {
+      "budget_cap": 4,
+      "cold_mean_brier": 0.0,
+      "donor_empirical_mean_loss_no_higher": true,
+      "donor_mean_brier": 0.0,
+      "mean_target_experiments_saved": 1.53125
+    },
+    "rows": [
+      {
+        "donor_cost_once": 6,
+        "projected_cold_cost_per_recipient": 3.0625,
+        "projected_cold_total_cost": 3.0625,
+        "projected_donor_cost_per_recipient": 7.53125,
+        "projected_donor_total_cost": 7.53125,
+        "recipients": 1
+      },
+      {
+        "donor_cost_once": 6,
+        "projected_cold_cost_per_recipient": 3.0625,
+        "projected_cold_total_cost": 6.125,
+        "projected_donor_cost_per_recipient": 4.53125,
+        "projected_donor_total_cost": 9.0625,
+        "recipients": 2
+      },
+      {
+        "donor_cost_once": 6,
+        "projected_cold_cost_per_recipient": 3.0625,
+        "projected_cold_total_cost": 12.25,
+        "projected_donor_cost_per_recipient": 3.03125,
+        "projected_donor_total_cost": 12.125,
+        "recipients": 4
+      },
+      {
+        "donor_cost_once": 6,
+        "projected_cold_cost_per_recipient": 3.0625,
+        "projected_cold_total_cost": 24.5,
+        "projected_donor_cost_per_recipient": 2.28125,
+        "projected_donor_total_cost": 18.25,
+        "recipients": 8
+      },
+      {
+        "donor_cost_once": 6,
+        "projected_cold_cost_per_recipient": 3.0625,
+        "projected_cold_total_cost": 49.0,
+        "projected_donor_cost_per_recipient": 1.90625,
+        "projected_donor_total_cost": 30.5,
+        "recipients": 16
+      }
+    ],
+    "scope": "Arithmetic projection only. Assumes one six-experiment source reused across independent recipients with the suite's mean target costs and losses. No same-source recipient cohort was run; this assumption is untested."
+  },
+  "curves": {
+    "cold_bayes_same_policy": {
+      "0": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.22428982208172482,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.21149610728025436,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 0.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "mechanism": {
+            "mean_brier": 0.21428768585125604,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.21149610728025436,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 0.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "none": {
+            "mean_brier": 0.21586951365073523,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.21149610728025436,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 0.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "sensor": {
+            "mean_brier": 0.20966427276531854,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.21149610728025436,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 0.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          }
+        },
+        "overall": {
+          "mean_brier": 0.21602782358725867,
+          "mean_donor_cost": 0.0,
+          "mean_posterior_expected_brier": 0.21149610728025436,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 0.0,
+          "resolved_at_budget_fraction": 0.0,
+          "resolved_before_budget_fraction": 0.0,
+          "stopping_cost_counts": {
+            "0": 32
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 0
+        }
+      },
+      "1": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.1727725619815179,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.16372825551789902,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 1.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "mechanism": {
+            "mean_brier": 0.20399269911951887,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.1895762698511865,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 1.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "none": {
+            "mean_brier": 0.1513396699338002,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.16836473918676115,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 1.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "sensor": {
+            "mean_brier": 0.14459166989726804,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.1604533921398803,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 1.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          }
+        },
+        "overall": {
+          "mean_brier": 0.16817415023302626,
+          "mean_donor_cost": 0.0,
+          "mean_posterior_expected_brier": 0.17053066417393176,
+          "mean_target_cost": 1.0,
+          "mean_total_cost": 1.0,
+          "resolved_at_budget_fraction": 0.0,
+          "resolved_before_budget_fraction": 0.0,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 32
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 0
+        }
+      },
+      "2": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.10776988731898061,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.07857074641194567,
+            "mean_target_cost": 2.0,
+            "mean_total_cost": 2.0,
+            "resolved_at_budget_fraction": 0.25,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 2
+          },
+          "mechanism": {
+            "mean_brier": 0.14088929221307256,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.11487161547491848,
+            "mean_target_cost": 2.0,
+            "mean_total_cost": 2.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "none": {
+            "mean_brier": 0.04449875510772718,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.06494292027784207,
+            "mean_target_cost": 2.0,
+            "mean_total_cost": 2.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "sensor": {
+            "mean_brier": 0.04698832053770908,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.04855856719312078,
+            "mean_target_cost": 2.0,
+            "mean_total_cost": 2.0,
+            "resolved_at_budget_fraction": 0.25,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 2
+          }
+        },
+        "overall": {
+          "mean_brier": 0.08503656379437236,
+          "mean_donor_cost": 0.0,
+          "mean_posterior_expected_brier": 0.07673596233945675,
+          "mean_target_cost": 2.0,
+          "mean_total_cost": 2.0,
+          "resolved_at_budget_fraction": 0.125,
+          "resolved_before_budget_fraction": 0.0,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 32
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 4
+        }
+      },
+      "3": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.001913214990138067,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.009625246548323472,
+            "mean_target_cost": 2.75,
+            "mean_total_cost": 2.75,
+            "resolved_at_budget_fraction": 0.5,
+            "resolved_before_budget_fraction": 0.25,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 2,
+              "3": 6
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 6
+          },
+          "mechanism": {
+            "mean_brier": 0.02463888888888889,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.024666666666666667,
+            "mean_target_cost": 3.0,
+            "mean_total_cost": 3.0,
+            "resolved_at_budget_fraction": 0.625,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 5
+          },
+          "none": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 3.0,
+            "mean_total_cost": 3.0,
+            "resolved_at_budget_fraction": 1.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "sensor": {
+            "mean_brier": 0.00021701388888888896,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.002387152777777778,
+            "mean_target_cost": 2.75,
+            "mean_total_cost": 2.75,
+            "resolved_at_budget_fraction": 0.625,
+            "resolved_before_budget_fraction": 0.25,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 2,
+              "3": 6
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 7
+          }
+        },
+        "overall": {
+          "mean_brier": 0.006692279441978961,
+          "mean_donor_cost": 0.0,
+          "mean_posterior_expected_brier": 0.009169766498191978,
+          "mean_target_cost": 2.875,
+          "mean_total_cost": 2.875,
+          "resolved_at_budget_fraction": 0.6875,
+          "resolved_before_budget_fraction": 0.125,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "3": 28
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 26
+        }
+      },
+      "4": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 3.0,
+            "mean_total_cost": 3.0,
+            "resolved_at_budget_fraction": 0.25,
+            "resolved_before_budget_fraction": 0.75,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 2,
+              "3": 4,
+              "4": 2
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "mechanism": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 3.375,
+            "mean_total_cost": 3.375,
+            "resolved_at_budget_fraction": 0.375,
+            "resolved_before_budget_fraction": 0.625,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 5,
+              "4": 3
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "none": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 3.0,
+            "mean_total_cost": 3.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 8,
+              "4": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "sensor": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 0.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 2.875,
+            "mean_total_cost": 2.875,
+            "resolved_at_budget_fraction": 0.125,
+            "resolved_before_budget_fraction": 0.875,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 0,
+              "2": 2,
+              "3": 5,
+              "4": 1
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          }
+        },
+        "overall": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 0.0,
+          "mean_posterior_expected_brier": 0.0,
+          "mean_target_cost": 3.0625,
+          "mean_total_cost": 3.0625,
+          "resolved_at_budget_fraction": 0.1875,
+          "resolved_before_budget_fraction": 0.8125,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 0,
+            "2": 4,
+            "3": 22,
+            "4": 6
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 32
+        }
+      }
+    },
+    "donor_method_bayes": {
+      "0": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.10340372721354167,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.060333251953125,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 6.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "mechanism": {
+            "mean_brier": 0.15556844075520834,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.060251871744791664,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 6.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "none": {
+            "mean_brier": 0.008809407552083334,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.043924967447916664,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 6.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "sensor": {
+            "mean_brier": 0.0076904296875,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.044392903645833336,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 6.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          }
+        },
+        "overall": {
+          "mean_brier": 0.06886800130208333,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.052225748697916664,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 6.0,
+          "resolved_at_budget_fraction": 0.0,
+          "resolved_before_budget_fraction": 0.0,
+          "stopping_cost_counts": {
+            "0": 32
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 0
+        }
+      },
+      "1": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.031901041666666664,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.027994791666666664,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 7.0,
+            "resolved_at_budget_fraction": 0.5,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 4
+          },
+          "mechanism": {
+            "mean_brier": 0.0224609375,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.027018229166666664,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 7.0,
+            "resolved_at_budget_fraction": 0.5,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 4
+          },
+          "none": {
+            "mean_brier": 9.713641706648678e-06,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0006264557444627375,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 7.0,
+            "resolved_at_budget_fraction": 0.75,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 6
+          },
+          "sensor": {
+            "mean_brier": 0.000548160390194971,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.008109700902470244,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 7.0,
+            "resolved_at_budget_fraction": 0.25,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 2
+          }
+        },
+        "overall": {
+          "mean_brier": 0.013729963299642071,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.01593729437006658,
+          "mean_target_cost": 1.0,
+          "mean_total_cost": 7.0,
+          "resolved_at_budget_fraction": 0.5,
+          "resolved_before_budget_fraction": 0.0,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 32
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 16
+        }
+      },
+      "2": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.5,
+            "resolved_before_budget_fraction": 0.5,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "mechanism": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.5,
+            "resolved_before_budget_fraction": 0.5,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "none": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.25,
+            "mean_total_cost": 7.25,
+            "resolved_at_budget_fraction": 0.25,
+            "resolved_before_budget_fraction": 0.75,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 6,
+              "2": 2
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "sensor": {
+            "mean_brier": 7.20876585928489e-05,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0011534025374855825,
+            "mean_target_cost": 1.75,
+            "mean_total_cost": 7.75,
+            "resolved_at_budget_fraction": 0.625,
+            "resolved_before_budget_fraction": 0.25,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 2,
+              "2": 6
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 7
+          }
+        },
+        "overall": {
+          "mean_brier": 1.8021914648212227e-05,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.0002883506343713956,
+          "mean_target_cost": 1.5,
+          "mean_total_cost": 7.5,
+          "resolved_at_budget_fraction": 0.46875,
+          "resolved_before_budget_fraction": 0.5,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 16,
+            "2": 16
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 31
+        }
+      },
+      "3": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4,
+              "3": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "mechanism": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4,
+              "3": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "none": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.25,
+            "mean_total_cost": 7.25,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 6,
+              "2": 2,
+              "3": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "sensor": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.875,
+            "mean_total_cost": 7.875,
+            "resolved_at_budget_fraction": 0.125,
+            "resolved_before_budget_fraction": 0.875,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 2,
+              "2": 5,
+              "3": 1
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          }
+        },
+        "overall": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.0,
+          "mean_target_cost": 1.53125,
+          "mean_total_cost": 7.53125,
+          "resolved_at_budget_fraction": 0.03125,
+          "resolved_before_budget_fraction": 0.96875,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 16,
+            "2": 15,
+            "3": 1
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 32
+        }
+      },
+      "4": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4,
+              "3": 0,
+              "4": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "mechanism": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4,
+              "3": 0,
+              "4": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "none": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.25,
+            "mean_total_cost": 7.25,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 6,
+              "2": 2,
+              "3": 0,
+              "4": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "sensor": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.875,
+            "mean_total_cost": 7.875,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 2,
+              "2": 5,
+              "3": 1,
+              "4": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          }
+        },
+        "overall": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.0,
+          "mean_target_cost": 1.53125,
+          "mean_total_cost": 7.53125,
+          "resolved_at_budget_fraction": 0.0,
+          "resolved_before_budget_fraction": 1.0,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 16,
+            "2": 15,
+            "3": 1,
+            "4": 0
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 32
+        }
+      }
+    },
+    "donor_raw_bayes": {
+      "0": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.10340372721354167,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.060333251953125,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 6.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "mechanism": {
+            "mean_brier": 0.15556844075520834,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.060251871744791664,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 6.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "none": {
+            "mean_brier": 0.008809407552083334,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.043924967447916664,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 6.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          },
+          "sensor": {
+            "mean_brier": 0.0076904296875,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.044392903645833336,
+            "mean_target_cost": 0.0,
+            "mean_total_cost": 6.0,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 0
+          }
+        },
+        "overall": {
+          "mean_brier": 0.06886800130208333,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.052225748697916664,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 6.0,
+          "resolved_at_budget_fraction": 0.0,
+          "resolved_before_budget_fraction": 0.0,
+          "stopping_cost_counts": {
+            "0": 32
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 0
+        }
+      },
+      "1": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.031901041666666664,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.027994791666666664,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 7.0,
+            "resolved_at_budget_fraction": 0.5,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 4
+          },
+          "mechanism": {
+            "mean_brier": 0.0224609375,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.027018229166666664,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 7.0,
+            "resolved_at_budget_fraction": 0.5,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 4
+          },
+          "none": {
+            "mean_brier": 9.713641706648678e-06,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0006264557444627375,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 7.0,
+            "resolved_at_budget_fraction": 0.75,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 6
+          },
+          "sensor": {
+            "mean_brier": 0.000548160390194971,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.008109700902470244,
+            "mean_target_cost": 1.0,
+            "mean_total_cost": 7.0,
+            "resolved_at_budget_fraction": 0.25,
+            "resolved_before_budget_fraction": 0.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 8
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 2
+          }
+        },
+        "overall": {
+          "mean_brier": 0.013729963299642071,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.01593729437006658,
+          "mean_target_cost": 1.0,
+          "mean_total_cost": 7.0,
+          "resolved_at_budget_fraction": 0.5,
+          "resolved_before_budget_fraction": 0.0,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 32
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 16
+        }
+      },
+      "2": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.5,
+            "resolved_before_budget_fraction": 0.5,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "mechanism": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.5,
+            "resolved_before_budget_fraction": 0.5,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "none": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.25,
+            "mean_total_cost": 7.25,
+            "resolved_at_budget_fraction": 0.25,
+            "resolved_before_budget_fraction": 0.75,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 6,
+              "2": 2
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "sensor": {
+            "mean_brier": 7.20876585928489e-05,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0011534025374855825,
+            "mean_target_cost": 1.75,
+            "mean_total_cost": 7.75,
+            "resolved_at_budget_fraction": 0.625,
+            "resolved_before_budget_fraction": 0.25,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 2,
+              "2": 6
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 7
+          }
+        },
+        "overall": {
+          "mean_brier": 1.8021914648212227e-05,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.0002883506343713956,
+          "mean_target_cost": 1.5,
+          "mean_total_cost": 7.5,
+          "resolved_at_budget_fraction": 0.46875,
+          "resolved_before_budget_fraction": 0.5,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 16,
+            "2": 16
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 31
+        }
+      },
+      "3": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4,
+              "3": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "mechanism": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4,
+              "3": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "none": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.25,
+            "mean_total_cost": 7.25,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 6,
+              "2": 2,
+              "3": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "sensor": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.875,
+            "mean_total_cost": 7.875,
+            "resolved_at_budget_fraction": 0.125,
+            "resolved_before_budget_fraction": 0.875,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 2,
+              "2": 5,
+              "3": 1
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          }
+        },
+        "overall": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.0,
+          "mean_target_cost": 1.53125,
+          "mean_total_cost": 7.53125,
+          "resolved_at_budget_fraction": 0.03125,
+          "resolved_before_budget_fraction": 0.96875,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 16,
+            "2": 15,
+            "3": 1
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 32
+        }
+      },
+      "4": {
+        "by_condition": {
+          "both": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4,
+              "3": 0,
+              "4": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "mechanism": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.5,
+            "mean_total_cost": 7.5,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 4,
+              "2": 4,
+              "3": 0,
+              "4": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "none": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.25,
+            "mean_total_cost": 7.25,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 6,
+              "2": 2,
+              "3": 0,
+              "4": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          },
+          "sensor": {
+            "mean_brier": 0.0,
+            "mean_donor_cost": 6.0,
+            "mean_posterior_expected_brier": 0.0,
+            "mean_target_cost": 1.875,
+            "mean_total_cost": 7.875,
+            "resolved_at_budget_fraction": 0.0,
+            "resolved_before_budget_fraction": 1.0,
+            "stopping_cost_counts": {
+              "0": 0,
+              "1": 2,
+              "2": 5,
+              "3": 1,
+              "4": 0
+            },
+            "worlds": 8,
+            "zero_forecast_uncertainty_worlds": 8
+          }
+        },
+        "overall": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_posterior_expected_brier": 0.0,
+          "mean_target_cost": 1.53125,
+          "mean_total_cost": 7.53125,
+          "resolved_at_budget_fraction": 0.0,
+          "resolved_before_budget_fraction": 1.0,
+          "stopping_cost_counts": {
+            "0": 0,
+            "1": 16,
+            "2": 15,
+            "3": 1,
+            "4": 0
+          },
+          "worlds": 32,
+          "zero_forecast_uncertainty_worlds": 32
+        }
+      }
+    }
+  },
+  "design": {
+    "action_selection": "Greedy Shannon entropy of possible observation readings; calibration values in public order, then process probes in public order; first action within 1e-12 of the maximum wins.",
+    "budget_caps": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "donor_cost": 6,
+    "donor_cost_provenance": "Fixed six-observation referee-generated source fixture; not measured agent discovery or measured donor compute.",
+    "donor_information": "Method artifact and raw six-observation data encode identical source coefficients, gain, and bias; both receive the same conditional prior.",
+    "participants": {
+      "cold_bayes_same_policy": "none",
+      "donor_method_bayes": "method",
+      "donor_raw_bayes": "raw"
+    },
+    "records": 480,
+    "stopping": "Stop when every forecast has posterior probability exactly 0 or 1, at budget exhaustion, or when every remaining action has exactly one possible reading; no repair, retry, or extra observation.",
+    "worlds": 32
+  },
+  "limitations": [
+    "This follow-up was designed after observing the earlier public-fixture results; it is exploratory, not a blinded or prospectively selected confirmation.",
+    "The matched policy is greedy one-step information gain, not optimal decision-theoretic experimental design.",
+    "Source information can reduce uncertainty; any benefit here does not establish an advantage of artifact format over equivalent raw data.",
+    "Compute, development effort, and human model-design costs are unmeasured; source cost is a fixed referee-fixture convention.",
+    "Finite noiseless family and exact calibration assumptions limit external validity."
+  ],
+  "paired_donor_minus_cold": {
+    "0": {
+      "donor_higher_loss_worlds": 5,
+      "donor_lower_loss_worlds": 27,
+      "equal_loss_worlds": 0,
+      "mean_brier_difference_donor_minus_cold": -0.14715982228517532,
+      "mean_target_experiments_saved": 0.0,
+      "worlds": 32
+    },
+    "1": {
+      "donor_higher_loss_worlds": 0,
+      "donor_lower_loss_worlds": 32,
+      "equal_loss_worlds": 0,
+      "mean_brier_difference_donor_minus_cold": -0.1544441869333842,
+      "mean_target_experiments_saved": 0.0,
+      "worlds": 32
+    },
+    "2": {
+      "donor_higher_loss_worlds": 0,
+      "donor_lower_loss_worlds": 28,
+      "equal_loss_worlds": 4,
+      "mean_brier_difference_donor_minus_cold": -0.08501854187972414,
+      "mean_target_experiments_saved": 0.5,
+      "worlds": 32
+    },
+    "3": {
+      "donor_higher_loss_worlds": 0,
+      "donor_lower_loss_worlds": 6,
+      "equal_loss_worlds": 26,
+      "mean_brier_difference_donor_minus_cold": -0.006692279441978961,
+      "mean_target_experiments_saved": 1.34375,
+      "worlds": 32
+    },
+    "4": {
+      "donor_higher_loss_worlds": 0,
+      "donor_lower_loss_worlds": 0,
+      "equal_loss_worlds": 32,
+      "mean_brier_difference_donor_minus_cold": 0.0,
+      "mean_target_experiments_saved": 1.53125,
+      "worlds": 32
+    }
+  },
+  "provenance": {
+    "engine_source_path": "src/unknown_engine/transfer.py",
+    "engine_source_sha256": "0deab2756e88d1c3441f6c7643c07522c320d21fdec28a67af26e68eb2f177ae",
+    "fixtures_reused": true,
+    "model_calls": 0,
+    "policy_source_path": "src/unknown_engine/transfer_matched.py",
+    "policy_source_sha256": "bf1313530e40460ff443781146d5b2961e09a6abb57ad72f279e0fef2dd8dcd0",
+    "source_replays_path": "evidence/transfer-preview/replays.json.gz",
+    "source_replays_sha256": "9cdb5eda0b4588d139dbb632271dd59a89d8665896089ae54e1ead20bb964e6d",
+    "specification_path": "docs/MATCHED_TRANSFER_PROTOCOL.md",
+    "specification_sha256": "3e7be7d5b4f7fdccf470d83655092e364e2fa8e5ad2ea576960fd7c94cf6f0f3"
+  },
+  "schema": "unknown-engine-transfer-matched/0.1/report",
+  "scope": "Matched-policy diagnostic on reused public development fixtures; zero model calls and no held-out or real-world claim."
+}

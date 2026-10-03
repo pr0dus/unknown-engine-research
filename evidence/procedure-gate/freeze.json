@@ -1,0 +1,16 @@
+{
+  "base_remote_commit": "6403173e354ffbffb9bbb9a431556a448646a716",
+  "base_tree": "d65c5e378e5208ff31162f7378ad48194b46d156",
+  "context": "Internal development freeze after design review and unit tests, before the first recorded complete study. Fixed-script saturation was predicted analytically. Not external preregistration or a trusted timestamp.",
+  "files": {
+    "docs/PROCEDURE_VALIDITY_PROTOCOL.md": "9e0c4f29b1ef9f0ad0ac9862129f5de7715208a3431381678658cf5c3fefe8e1",
+    "scripts/verify_procedure_gate.py": "a005a30468b290d27cc33d17e624df576548fb1a8118041deafc623c54019603",
+    "src/unknown_engine/procedure.py": "f69eebdd244d67084b503b5440580480e1f2bc6775f9d89cf78f463620b15b82",
+    "src/unknown_engine/procedure_reference.py": "f6431202220c7bd91a4344668cfa2855de725f6b21fcedf11dad895e8caffc36",
+    "tests/test_procedure.py": "d3ad37b0d2796956d3d23beae79b228e49fdd01b0e2c3eec0c8c93627698f3c7",
+    "tests/test_procedure_reference.py": "0fca9f3e482259314551f4a56bfc25aef61c0f031d9c299cd024ec9173ce231f",
+    "tests/test_procedure_verifier.py": "af8907adb877b9c5a13afd715e660676b3f962871f05ef199148cfe96eb9af25"
+  },
+  "recorded_at_utc": "2026-09-27T15:52:48.823719+00:00",
+  "schema": "unknown-engine-procedure-freeze/0.1"
+}

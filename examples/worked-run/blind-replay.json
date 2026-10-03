@@ -1,0 +1,542 @@
+{
+  "arm": "blind",
+  "budget_total": 4,
+  "chain_head": "a24eee4a7a5399c31c6749ac53c5ec5d072f3791f1bc8c254a5ef29b597b2043",
+  "commitment": "8b0e1e60bb038fc059664f042c002153df8b864a5e5fd763dc45f00cc7ee153c",
+  "disclosure": {
+    "commitment_payload": {
+      "arm": "blind",
+      "budget_total": 4,
+      "config": {
+        "changed_coefficient": 2,
+        "condition": "both",
+        "delta": 1,
+        "source": {
+          "bias": 0,
+          "coefficients": [
+            2,
+            -2,
+            2,
+            -2
+          ],
+          "gain": 0.5
+        },
+        "target": {
+          "bias": -2,
+          "coefficients": [
+            2,
+            -2,
+            3,
+            -2
+          ],
+          "gain": 2
+        }
+      },
+      "family": "finite-cubic-affine-sensor/1",
+      "protocol": "unknown-engine/transfer-0.5-alpha.1",
+      "salt": "80a23949644dec07436d85f6c7fe751f77cb32df1bf0431be38245699da42e02",
+      "seed": "unknown-engine-transfer-public-development-fixture-v1:both-000"
+    },
+    "config": {
+      "changed_coefficient": 2,
+      "condition": "both",
+      "delta": 1,
+      "source": {
+        "bias": 0,
+        "coefficients": [
+          2,
+          -2,
+          2,
+          -2
+        ],
+        "gain": 0.5
+      },
+      "target": {
+        "bias": -2,
+        "coefficients": [
+          2,
+          -2,
+          3,
+          -2
+        ],
+        "gain": 2
+      }
+    },
+    "salt": "80a23949644dec07436d85f6c7fe751f77cb32df1bf0431be38245699da42e02",
+    "seed": "unknown-engine-transfer-public-development-fixture-v1:both-000"
+  },
+  "family": "finite-cubic-affine-sensor/1",
+  "finished": true,
+  "protocol": "unknown-engine/transfer-0.5-alpha.1",
+  "state": {
+    "arm": "blind",
+    "artifact": {
+      "applicability": [
+        "Recalibrate the target instrument before interpreting process measurements.",
+        "Compare corrected target probes with source predictions; the source equation may have changed.",
+        "Validity outside the declared family or probe domain is not established."
+      ],
+      "assumptions": [
+        "Degree at most three, ascending coefficient order.",
+        "Noiseless static process and one affine sensor shared by process and calibration references.",
+        "The two standardized references are exact and bypass the process."
+      ],
+      "coefficients": [
+        2.0,
+        -2.0,
+        2.0,
+        -2.0
+      ],
+      "donor_cost": 6,
+      "donor_probe_values": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "format": "ascending-cubic-coefficients/1",
+      "provenance": "Referee reference artifact derived by calibration and cubic interpolation from the six-measurement donor fixture; not independently discovered by a participant.",
+      "source_calibration": {
+        "bias": 0.0,
+        "gain": 0.5
+      }
+    },
+    "budget_remaining": 4,
+    "budget_total": 4,
+    "chain_head": "a24eee4a7a5399c31c6749ac53c5ec5d072f3791f1bc8c254a5ef29b597b2043",
+    "commitment": "8b0e1e60bb038fc059664f042c002153df8b864a5e5fd763dc45f00cc7ee153c",
+    "donor_cost": 6,
+    "family": "finite-cubic-affine-sensor/1",
+    "finished": true,
+    "forecast_keys": [
+      "q@-1.5>=-2",
+      "q@-1.5>=0",
+      "q@-1.5>=2",
+      "q@-0.5>=-2",
+      "q@-0.5>=0",
+      "q@-0.5>=2",
+      "q@0.5>=-2",
+      "q@0.5>=0",
+      "q@0.5>=2",
+      "q@1.5>=-2",
+      "q@1.5>=0",
+      "q@1.5>=2"
+    ],
+    "history": [],
+    "protocol": "unknown-engine/transfer-0.5-alpha.1",
+    "public_rules": {
+      "calibration": "A known standardized reference value replaces the process output upstream of the same target sensor. It bypasses the process, so its reading is g*value+b.",
+      "calibration_values": [
+        0,
+        1
+      ],
+      "coefficient_delta_values": [
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "condition_prior": {
+        "both": 0.25,
+        "mechanism": 0.25,
+        "none": 0.25,
+        "sensor": 0.25
+      },
+      "donor_experiment_cost": 6,
+      "experiment_cost": 1,
+      "forecast_event": "q(x)>=threshold, using the physical response, not the sensor reading",
+      "mechanism_change": "Exactly one coefficient index is chosen uniformly and receives one independent uniform nonzero delta.",
+      "observations": "Noiseless, exact dyadic values; no rounding or unknown calibration error. The target is static and experiments do not alter it.",
+      "physical_response": "q(x)=a0+a1*x+a2*x^2+a3*x^3; degree at most three",
+      "practice_validation": "Invalid requests are rejected without cost or state changes; this is not a ranked no-repair model trial.",
+      "probe_values": [
+        -2,
+        -1,
+        -0.5,
+        0,
+        0.5,
+        1,
+        2
+      ],
+      "scope": "Known finite family, enumerable by a cold solver; this practice world establishes no novelty, frontier difficulty, or transfer advantage.",
+      "scoring": "Mean squared probability error over all 12 binary targets (Brier loss); lower is better. Scores are revealed only after final submission.",
+      "sensor": "z=g*q(x)+b; g is positive",
+      "sensor_change": "Both gain and bias change, each chosen uniformly from its source grid excluding its source value.",
+      "source_bias_values": [
+        -2,
+        0,
+        2
+      ],
+      "source_coefficient_values": [
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "source_coefficients_independent_uniform": true,
+      "source_gain_and_bias_independent_uniform": true,
+      "source_gain_values": [
+        0.5,
+        1,
+        2
+      ]
+    },
+    "result": {
+      "constant_baseline": 0.25,
+      "coverage": 1.0,
+      "donor_cost": 6,
+      "experiments_used": 0,
+      "forecast_receipt_hash": "1f9918eff7790fa8ef661a6f0b0b5fea0ecaf54e2cc5bb334c93931dbee4a5da",
+      "outcomes": {
+        "q@-0.5>=-2": 1,
+        "q@-0.5>=0": 1,
+        "q@-0.5>=2": 1,
+        "q@-1.5>=-2": 1,
+        "q@-1.5>=0": 1,
+        "q@-1.5>=2": 1,
+        "q@0.5>=-2": 1,
+        "q@0.5>=0": 1,
+        "q@0.5>=2": 0,
+        "q@1.5>=-2": 1,
+        "q@1.5>=0": 0,
+        "q@1.5>=2": 0
+      },
+      "primary_brier": 0.08333333333333333,
+      "probabilities": {
+        "q@-0.5>=-2": 1.0,
+        "q@-0.5>=0": 1.0,
+        "q@-0.5>=2": 1.0,
+        "q@-1.5>=-2": 1.0,
+        "q@-1.5>=0": 1.0,
+        "q@-1.5>=2": 1.0,
+        "q@0.5>=-2": 1.0,
+        "q@0.5>=0": 1.0,
+        "q@0.5>=2": 0.0,
+        "q@1.5>=-2": 0.0,
+        "q@1.5>=0": 0.0,
+        "q@1.5>=2": 0.0
+      },
+      "target_cost": 0,
+      "total_cost": 6
+    },
+    "source_data": null,
+    "step": 0,
+    "targets": [
+      {
+        "key": "q@-1.5>=-2",
+        "threshold": -2,
+        "x": -1.5
+      },
+      {
+        "key": "q@-1.5>=0",
+        "threshold": 0,
+        "x": -1.5
+      },
+      {
+        "key": "q@-1.5>=2",
+        "threshold": 2,
+        "x": -1.5
+      },
+      {
+        "key": "q@-0.5>=-2",
+        "threshold": -2,
+        "x": -0.5
+      },
+      {
+        "key": "q@-0.5>=0",
+        "threshold": 0,
+        "x": -0.5
+      },
+      {
+        "key": "q@-0.5>=2",
+        "threshold": 2,
+        "x": -0.5
+      },
+      {
+        "key": "q@0.5>=-2",
+        "threshold": -2,
+        "x": 0.5
+      },
+      {
+        "key": "q@0.5>=0",
+        "threshold": 0,
+        "x": 0.5
+      },
+      {
+        "key": "q@0.5>=2",
+        "threshold": 2,
+        "x": 0.5
+      },
+      {
+        "key": "q@1.5>=-2",
+        "threshold": -2,
+        "x": 1.5
+      },
+      {
+        "key": "q@1.5>=0",
+        "threshold": 0,
+        "x": 1.5
+      },
+      {
+        "key": "q@1.5>=2",
+        "threshold": 2,
+        "x": 1.5
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "data": {
+        "initial_state": {
+          "arm": "blind",
+          "artifact": {
+            "applicability": [
+              "Recalibrate the target instrument before interpreting process measurements.",
+              "Compare corrected target probes with source predictions; the source equation may have changed.",
+              "Validity outside the declared family or probe domain is not established."
+            ],
+            "assumptions": [
+              "Degree at most three, ascending coefficient order.",
+              "Noiseless static process and one affine sensor shared by process and calibration references.",
+              "The two standardized references are exact and bypass the process."
+            ],
+            "coefficients": [
+              2.0,
+              -2.0,
+              2.0,
+              -2.0
+            ],
+            "donor_cost": 6,
+            "donor_probe_values": [
+              -1,
+              0,
+              1,
+              2
+            ],
+            "format": "ascending-cubic-coefficients/1",
+            "provenance": "Referee reference artifact derived by calibration and cubic interpolation from the six-measurement donor fixture; not independently discovered by a participant.",
+            "source_calibration": {
+              "bias": 0.0,
+              "gain": 0.5
+            }
+          },
+          "budget_remaining": 4,
+          "budget_total": 4,
+          "chain_head": "0000000000000000000000000000000000000000000000000000000000000000",
+          "commitment": "8b0e1e60bb038fc059664f042c002153df8b864a5e5fd763dc45f00cc7ee153c",
+          "donor_cost": 6,
+          "family": "finite-cubic-affine-sensor/1",
+          "finished": false,
+          "forecast_keys": [
+            "q@-1.5>=-2",
+            "q@-1.5>=0",
+            "q@-1.5>=2",
+            "q@-0.5>=-2",
+            "q@-0.5>=0",
+            "q@-0.5>=2",
+            "q@0.5>=-2",
+            "q@0.5>=0",
+            "q@0.5>=2",
+            "q@1.5>=-2",
+            "q@1.5>=0",
+            "q@1.5>=2"
+          ],
+          "history": [],
+          "protocol": "unknown-engine/transfer-0.5-alpha.1",
+          "public_rules": {
+            "calibration": "A known standardized reference value replaces the process output upstream of the same target sensor. It bypasses the process, so its reading is g*value+b.",
+            "calibration_values": [
+              0,
+              1
+            ],
+            "coefficient_delta_values": [
+              -2,
+              -1,
+              1,
+              2
+            ],
+            "condition_prior": {
+              "both": 0.25,
+              "mechanism": 0.25,
+              "none": 0.25,
+              "sensor": 0.25
+            },
+            "donor_experiment_cost": 6,
+            "experiment_cost": 1,
+            "forecast_event": "q(x)>=threshold, using the physical response, not the sensor reading",
+            "mechanism_change": "Exactly one coefficient index is chosen uniformly and receives one independent uniform nonzero delta.",
+            "observations": "Noiseless, exact dyadic values; no rounding or unknown calibration error. The target is static and experiments do not alter it.",
+            "physical_response": "q(x)=a0+a1*x+a2*x^2+a3*x^3; degree at most three",
+            "practice_validation": "Invalid requests are rejected without cost or state changes; this is not a ranked no-repair model trial.",
+            "probe_values": [
+              -2,
+              -1,
+              -0.5,
+              0,
+              0.5,
+              1,
+              2
+            ],
+            "scope": "Known finite family, enumerable by a cold solver; this practice world establishes no novelty, frontier difficulty, or transfer advantage.",
+            "scoring": "Mean squared probability error over all 12 binary targets (Brier loss); lower is better. Scores are revealed only after final submission.",
+            "sensor": "z=g*q(x)+b; g is positive",
+            "sensor_change": "Both gain and bias change, each chosen uniformly from its source grid excluding its source value.",
+            "source_bias_values": [
+              -2,
+              0,
+              2
+            ],
+            "source_coefficient_values": [
+              -2,
+              -1,
+              1,
+              2
+            ],
+            "source_coefficients_independent_uniform": true,
+            "source_gain_and_bias_independent_uniform": true,
+            "source_gain_values": [
+              0.5,
+              1,
+              2
+            ]
+          },
+          "source_data": null,
+          "step": 0,
+          "targets": [
+            {
+              "key": "q@-1.5>=-2",
+              "threshold": -2,
+              "x": -1.5
+            },
+            {
+              "key": "q@-1.5>=0",
+              "threshold": 0,
+              "x": -1.5
+            },
+            {
+              "key": "q@-1.5>=2",
+              "threshold": 2,
+              "x": -1.5
+            },
+            {
+              "key": "q@-0.5>=-2",
+              "threshold": -2,
+              "x": -0.5
+            },
+            {
+              "key": "q@-0.5>=0",
+              "threshold": 0,
+              "x": -0.5
+            },
+            {
+              "key": "q@-0.5>=2",
+              "threshold": 2,
+              "x": -0.5
+            },
+            {
+              "key": "q@0.5>=-2",
+              "threshold": -2,
+              "x": 0.5
+            },
+            {
+              "key": "q@0.5>=0",
+              "threshold": 0,
+              "x": 0.5
+            },
+            {
+              "key": "q@0.5>=2",
+              "threshold": 2,
+              "x": 0.5
+            },
+            {
+              "key": "q@1.5>=-2",
+              "threshold": -2,
+              "x": 1.5
+            },
+            {
+              "key": "q@1.5>=0",
+              "threshold": 0,
+              "x": 1.5
+            },
+            {
+              "key": "q@1.5>=2",
+              "threshold": 2,
+              "x": 1.5
+            }
+          ]
+        }
+      },
+      "hash": "28f2bdb6212e117d59be671bf1f5d110fbb52dd2f63a3457e17a598decd98e22",
+      "index": 0,
+      "kind": "genesis",
+      "previous": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "data": {
+        "experiments_used": 0,
+        "probabilities": {
+          "q@-0.5>=-2": 1.0,
+          "q@-0.5>=0": 1.0,
+          "q@-0.5>=2": 1.0,
+          "q@-1.5>=-2": 1.0,
+          "q@-1.5>=0": 1.0,
+          "q@-1.5>=2": 1.0,
+          "q@0.5>=-2": 1.0,
+          "q@0.5>=0": 1.0,
+          "q@0.5>=2": 0.0,
+          "q@1.5>=-2": 0.0,
+          "q@1.5>=0": 0.0,
+          "q@1.5>=2": 0.0
+        }
+      },
+      "hash": "1f9918eff7790fa8ef661a6f0b0b5fea0ecaf54e2cc5bb334c93931dbee4a5da",
+      "index": 1,
+      "kind": "forecast",
+      "previous": "28f2bdb6212e117d59be671bf1f5d110fbb52dd2f63a3457e17a598decd98e22"
+    },
+    {
+      "data": {
+        "constant_baseline": 0.25,
+        "coverage": 1.0,
+        "donor_cost": 6,
+        "experiments_used": 0,
+        "forecast_receipt_hash": "1f9918eff7790fa8ef661a6f0b0b5fea0ecaf54e2cc5bb334c93931dbee4a5da",
+        "outcomes": {
+          "q@-0.5>=-2": 1,
+          "q@-0.5>=0": 1,
+          "q@-0.5>=2": 1,
+          "q@-1.5>=-2": 1,
+          "q@-1.5>=0": 1,
+          "q@-1.5>=2": 1,
+          "q@0.5>=-2": 1,
+          "q@0.5>=0": 1,
+          "q@0.5>=2": 0,
+          "q@1.5>=-2": 1,
+          "q@1.5>=0": 0,
+          "q@1.5>=2": 0
+        },
+        "primary_brier": 0.08333333333333333,
+        "probabilities": {
+          "q@-0.5>=-2": 1.0,
+          "q@-0.5>=0": 1.0,
+          "q@-0.5>=2": 1.0,
+          "q@-1.5>=-2": 1.0,
+          "q@-1.5>=0": 1.0,
+          "q@-1.5>=2": 1.0,
+          "q@0.5>=-2": 1.0,
+          "q@0.5>=0": 1.0,
+          "q@0.5>=2": 0.0,
+          "q@1.5>=-2": 0.0,
+          "q@1.5>=0": 0.0,
+          "q@1.5>=2": 0.0
+        },
+        "target_cost": 0,
+        "total_cost": 6
+      },
+      "hash": "a24eee4a7a5399c31c6749ac53c5ec5d072f3791f1bc8c254a5ef29b597b2043",
+      "index": 2,
+      "kind": "outcome",
+      "previous": "1f9918eff7790fa8ef661a6f0b0b5fea0ecaf54e2cc5bb334c93931dbee4a5da"
+    }
+  ]
+}

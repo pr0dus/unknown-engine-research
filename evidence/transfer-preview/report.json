@@ -1,0 +1,486 @@
+{
+  "cost_accounting": "Each recipient using source information is charged all six donor experiments plus its target experiments. Costs are not amortized; cold and constant policies receive no source information. Compute, implementation, and human design costs are not measured.",
+  "fixture": {
+    "commitment_salts_random": true,
+    "conditions": [
+      "none",
+      "sensor",
+      "mechanism",
+      "both"
+    ],
+    "physical_configs_deterministic": true,
+    "records": 224,
+    "seed_prefix": "unknown-engine-transfer-public-development-fixture-v1",
+    "worlds": 32,
+    "worlds_per_condition": 8
+  },
+  "limitations": [
+    "The published finite noiseless family is intentionally small and exactly identifiable with sufficient measurements.",
+    "Raw and method arms contain the same information; their equality is a required control, not evidence of an artifact-format advantage.",
+    "The four-experiment linear cold baseline is deliberately limited; compare the finite-family Bayesian baseline before claiming benefit.",
+    "The Bayesian reference uses greedy one-step information gain, not an optimal multi-step experimental design solver.",
+    "The six-experiment cold cubic reference has a larger target budget; report this resource difference alongside loss.",
+    "No evidence here establishes novel scientific invention, autonomous cross-laboratory transfer, or usefulness outside this simulator."
+  ],
+  "paired_comparisons": {
+    "blind_reuse": {
+      "equal_loss_worlds": 20,
+      "mean_brier_difference_method_minus_comparator": -0.0859375,
+      "method_higher_loss_worlds": 0,
+      "method_lower_loss_worlds": 12,
+      "paired_worlds": 32
+    },
+    "cold_finite_bayes": {
+      "equal_loss_worlds": 32,
+      "mean_brier_difference_method_minus_comparator": 0.0,
+      "method_higher_loss_worlds": 0,
+      "method_lower_loss_worlds": 0,
+      "paired_worlds": 32
+    },
+    "cold_full_cubic": {
+      "equal_loss_worlds": 32,
+      "mean_brier_difference_method_minus_comparator": 0.0,
+      "method_higher_loss_worlds": 0,
+      "method_lower_loss_worlds": 0,
+      "paired_worlds": 32
+    },
+    "cold_limited_linear": {
+      "equal_loss_worlds": 2,
+      "mean_brier_difference_method_minus_comparator": -0.14322916666666666,
+      "method_higher_loss_worlds": 0,
+      "method_lower_loss_worlds": 30,
+      "paired_worlds": 32
+    },
+    "constant_0_5": {
+      "equal_loss_worlds": 0,
+      "mean_brier_difference_method_minus_comparator": -0.25,
+      "method_higher_loss_worlds": 0,
+      "method_lower_loss_worlds": 32,
+      "paired_worlds": 32
+    },
+    "raw_adaptive": {
+      "equal_loss_worlds": 32,
+      "mean_brier_difference_method_minus_comparator": 0.0,
+      "method_higher_loss_worlds": 0,
+      "method_lower_loss_worlds": 0,
+      "paired_worlds": 32
+    }
+  },
+  "participants": {
+    "blind_reuse": {
+      "by_condition": {
+        "both": {
+          "mean_brier": 0.14583333333333334,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 6.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 0,
+          "sum_total_cost": 48,
+          "worlds": 8
+        },
+        "mechanism": {
+          "mean_brier": 0.19791666666666666,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 6.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 0,
+          "sum_total_cost": 48,
+          "worlds": 8
+        },
+        "none": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 6.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 0,
+          "sum_total_cost": 48,
+          "worlds": 8
+        },
+        "sensor": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 6.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 0,
+          "sum_total_cost": 48,
+          "worlds": 8
+        }
+      },
+      "overall": {
+        "mean_brier": 0.0859375,
+        "mean_donor_cost": 6.0,
+        "mean_target_cost": 0.0,
+        "mean_total_cost": 6.0,
+        "sum_donor_cost": 192,
+        "sum_target_cost": 0,
+        "sum_total_cost": 192,
+        "worlds": 32
+      },
+      "policy": {
+        "arm": "blind",
+        "budget": 4,
+        "description": "Reuses donor physical coefficients without any target experiment."
+      }
+    },
+    "cold_finite_bayes": {
+      "by_condition": {
+        "both": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 3.125,
+          "mean_total_cost": 3.125,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 25,
+          "sum_total_cost": 25,
+          "worlds": 8
+        },
+        "mechanism": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 3.375,
+          "mean_total_cost": 3.375,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 27,
+          "sum_total_cost": 27,
+          "worlds": 8
+        },
+        "none": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 3.0,
+          "mean_total_cost": 3.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 24,
+          "sum_total_cost": 24,
+          "worlds": 8
+        },
+        "sensor": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 2.875,
+          "mean_total_cost": 2.875,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 23,
+          "sum_total_cost": 23,
+          "worlds": 8
+        }
+      },
+      "overall": {
+        "mean_brier": 0.0,
+        "mean_donor_cost": 0.0,
+        "mean_target_cost": 3.09375,
+        "mean_total_cost": 3.09375,
+        "sum_donor_cost": 0,
+        "sum_target_cost": 99,
+        "sum_total_cost": 99,
+        "worlds": 32
+      },
+      "policy": {
+        "arm": "none",
+        "budget": 4,
+        "description": "Full published finite joint prior; greedy one-step information gain over calibration and process actions. Not a proven optimal experiment policy."
+      }
+    },
+    "cold_full_cubic": {
+      "by_condition": {
+        "both": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 6.0,
+          "mean_total_cost": 6.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 48,
+          "sum_total_cost": 48,
+          "worlds": 8
+        },
+        "mechanism": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 6.0,
+          "mean_total_cost": 6.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 48,
+          "sum_total_cost": 48,
+          "worlds": 8
+        },
+        "none": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 6.0,
+          "mean_total_cost": 6.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 48,
+          "sum_total_cost": 48,
+          "worlds": 8
+        },
+        "sensor": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 6.0,
+          "mean_total_cost": 6.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 48,
+          "sum_total_cost": 48,
+          "worlds": 8
+        }
+      },
+      "overall": {
+        "mean_brier": 0.0,
+        "mean_donor_cost": 0.0,
+        "mean_target_cost": 6.0,
+        "mean_total_cost": 6.0,
+        "sum_donor_cost": 0,
+        "sum_target_cost": 192,
+        "sum_total_cost": 192,
+        "worlds": 32
+      },
+      "policy": {
+        "arm": "none",
+        "budget": 6,
+        "description": "Two calibration anchors plus four process probes identify the cubic; has a larger target budget."
+      }
+    },
+    "cold_limited_linear": {
+      "by_condition": {
+        "both": {
+          "mean_brier": 0.17708333333333331,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 4.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 32,
+          "sum_total_cost": 32,
+          "worlds": 8
+        },
+        "mechanism": {
+          "mean_brier": 0.1875,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 4.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 32,
+          "sum_total_cost": 32,
+          "worlds": 8
+        },
+        "none": {
+          "mean_brier": 0.07291666666666666,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 4.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 32,
+          "sum_total_cost": 32,
+          "worlds": 8
+        },
+        "sensor": {
+          "mean_brier": 0.13541666666666666,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 4.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 32,
+          "sum_total_cost": 32,
+          "worlds": 8
+        }
+      },
+      "overall": {
+        "mean_brier": 0.14322916666666666,
+        "mean_donor_cost": 0.0,
+        "mean_target_cost": 4.0,
+        "mean_total_cost": 4.0,
+        "sum_donor_cost": 0,
+        "sum_target_cost": 128,
+        "sum_total_cost": 128,
+        "worlds": 32
+      },
+      "policy": {
+        "arm": "none",
+        "budget": 4,
+        "description": "Limited baseline: two calibration anchors and a two-point linear fit; not a strong general cold-start solver."
+      }
+    },
+    "constant_0_5": {
+      "by_condition": {
+        "both": {
+          "mean_brier": 0.25,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 0.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 0,
+          "sum_total_cost": 0,
+          "worlds": 8
+        },
+        "mechanism": {
+          "mean_brier": 0.25,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 0.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 0,
+          "sum_total_cost": 0,
+          "worlds": 8
+        },
+        "none": {
+          "mean_brier": 0.25,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 0.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 0,
+          "sum_total_cost": 0,
+          "worlds": 8
+        },
+        "sensor": {
+          "mean_brier": 0.25,
+          "mean_donor_cost": 0.0,
+          "mean_target_cost": 0.0,
+          "mean_total_cost": 0.0,
+          "sum_donor_cost": 0,
+          "sum_target_cost": 0,
+          "sum_total_cost": 0,
+          "worlds": 8
+        }
+      },
+      "overall": {
+        "mean_brier": 0.25,
+        "mean_donor_cost": 0.0,
+        "mean_target_cost": 0.0,
+        "mean_total_cost": 0.0,
+        "sum_donor_cost": 0,
+        "sum_target_cost": 0,
+        "sum_total_cost": 0,
+        "worlds": 32
+      },
+      "policy": {
+        "arm": "none",
+        "budget": 4,
+        "description": "Valid constant 0.5 forecasts with no experiments."
+      }
+    },
+    "method_adaptive": {
+      "by_condition": {
+        "both": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 10.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 32,
+          "sum_total_cost": 80,
+          "worlds": 8
+        },
+        "mechanism": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 10.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 32,
+          "sum_total_cost": 80,
+          "worlds": 8
+        },
+        "none": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 10.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 32,
+          "sum_total_cost": 80,
+          "worlds": 8
+        },
+        "sensor": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 10.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 32,
+          "sum_total_cost": 80,
+          "worlds": 8
+        }
+      },
+      "overall": {
+        "mean_brier": 0.0,
+        "mean_donor_cost": 6.0,
+        "mean_target_cost": 4.0,
+        "mean_total_cost": 10.0,
+        "sum_donor_cost": 192,
+        "sum_target_cost": 128,
+        "sum_total_cost": 320,
+        "worlds": 32
+      },
+      "policy": {
+        "arm": "method",
+        "budget": 4,
+        "description": "Two calibration anchors and two sparse-change probes; uses donor coefficients."
+      }
+    },
+    "raw_adaptive": {
+      "by_condition": {
+        "both": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 10.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 32,
+          "sum_total_cost": 80,
+          "worlds": 8
+        },
+        "mechanism": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 10.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 32,
+          "sum_total_cost": 80,
+          "worlds": 8
+        },
+        "none": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 10.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 32,
+          "sum_total_cost": 80,
+          "worlds": 8
+        },
+        "sensor": {
+          "mean_brier": 0.0,
+          "mean_donor_cost": 6.0,
+          "mean_target_cost": 4.0,
+          "mean_total_cost": 10.0,
+          "sum_donor_cost": 48,
+          "sum_target_cost": 32,
+          "sum_total_cost": 80,
+          "worlds": 8
+        }
+      },
+      "overall": {
+        "mean_brier": 0.0,
+        "mean_donor_cost": 6.0,
+        "mean_target_cost": 4.0,
+        "mean_total_cost": 10.0,
+        "sum_donor_cost": 192,
+        "sum_target_cost": 128,
+        "sum_total_cost": 320,
+        "worlds": 32
+      },
+      "policy": {
+        "arm": "raw",
+        "budget": 4,
+        "description": "Reconstructs the same donor information from six raw observations, then uses the identical adaptive procedure."
+      }
+    }
+  },
+  "schema": "unknown-engine-transfer-reference-report/0.1",
+  "scope": "Public deterministic development fixtures and reference programs only; zero model calls. Not held-out, independent, frontier-model, or real-world evidence."
+}

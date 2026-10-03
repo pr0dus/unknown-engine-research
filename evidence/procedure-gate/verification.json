@@ -1,0 +1,18 @@
+{
+  "analytic_identifiability": {
+    "fixed_script_target_units": 16,
+    "full_configurations": 192,
+    "full_signatures_unique": true,
+    "restricted_indistinguishable": true,
+    "restricted_legal_actions": 8,
+    "restricted_operational_targets_differ": true
+  },
+  "disposition": "Regression diagnostic passed; frontier-difficulty claim rejected; redesign required before a frontier trial.",
+  "experiments": 2704,
+  "fixtures": 194,
+  "freeze_sha256": "1b6263e592b9ecbe74a20bfde5fd0f085c9cec6e5021b722e7c4c5b603e3092b",
+  "records": 970,
+  "scope": "Separate analytic-convolution reconstruction of every disclosed observation, policy action, forecast, label, cost and aggregate. Not external replication, a signature, a timestamp, participant isolation or real-world validation.",
+  "source_hashes_verified": 7,
+  "verified": true
+}
